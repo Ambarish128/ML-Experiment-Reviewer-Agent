@@ -1,0 +1,22 @@
+# Ignore your local virtual environment directory
+venv/
+.venv/
+env/
+ENV/
+
+
+# Python bytecode and cache
+__pycache__
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+Environment Variables & Secrets
+# ==============================================================================
+.env
+.env.*
+!.env.example
+secrets.toml
