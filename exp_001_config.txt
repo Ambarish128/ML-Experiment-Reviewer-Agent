@@ -1,0 +1,41 @@
+==================================================
+Experiment Configuration
+==================================================
+
+Experiment ID        : EXP_001
+Experiment Name      : Image Classification Baseline
+Date                 : 2026-07-11
+
+Task Type            : Multi-Class Image Classification
+Model Architecture   : ResNet50
+Pretrained Weights   : ImageNet
+Framework            : TensorFlow 2.18
+Optimizer            : Adam
+Learning Rate        : 0.001
+Weight Decay         : 0.0001
+Loss Function        : Categorical Crossentropy
+Evaluation Metric    : Accuracy
+
+Input Image Size     : 224 x 224 x 3
+Batch Size           : 32
+Epochs               : 10
+Early Stopping       : Disabled
+Data Augmentation    : Horizontal Flip, Random Rotation, Zoom
+Dropout Rate         : 0.50
+
+Dataset Name         : ImageNet_Subset
+Dataset Size         : 10,000 images
+Training Samples     : 8,000
+Validation Samples   : 2,000
+Number of Classes    : 10
+
+Random Seed          : 42
+Shuffle Data         : Enabled
+Mixed Precision      : Disabled
+GPU                  : NVIDIA RTX 3060
+
+Notes:
+- Baseline experiment using transfer learning.
+- All layers unfrozen for fine-tuning.
+- Validation performed after every epoch.
+==================================================
